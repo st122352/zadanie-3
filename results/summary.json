@@ -1,0 +1,352 @@
+{
+  "seed": 20261117,
+  "total_rows": 4137,
+  "source_columns": 24,
+  "selected_columns": {
+    "climate": [
+      "Temperature_Comedor_Sensor",
+      "Temperature_Habitacion_Sensor",
+      "Weather_Temperature",
+      "Temperature_Exterior_Sensor",
+      "Humedad_Comedor_Sensor",
+      "Humedad_Habitacion_Sensor",
+      "Humedad_Exterior_Sensor"
+    ],
+    "climate_plus_solar": [
+      "Temperature_Comedor_Sensor",
+      "Temperature_Habitacion_Sensor",
+      "Weather_Temperature",
+      "Temperature_Exterior_Sensor",
+      "Humedad_Comedor_Sensor",
+      "Humedad_Habitacion_Sensor",
+      "Humedad_Exterior_Sensor",
+      "Meteo_Exterior_Sol_Oest",
+      "Meteo_Exterior_Sol_Est",
+      "Meteo_Exterior_Sol_Sud",
+      "Meteo_Exterior_Piranometro"
+    ],
+    "expanded_with_room_light": [
+      "Temperature_Comedor_Sensor",
+      "Temperature_Habitacion_Sensor",
+      "Weather_Temperature",
+      "Temperature_Exterior_Sensor",
+      "Humedad_Comedor_Sensor",
+      "Humedad_Habitacion_Sensor",
+      "Humedad_Exterior_Sensor",
+      "Meteo_Exterior_Sol_Oest",
+      "Meteo_Exterior_Sol_Est",
+      "Meteo_Exterior_Sol_Sud",
+      "Meteo_Exterior_Piranometro",
+      "Lighting_Comedor_Sensor",
+      "Lighting_Habitacion_Sensor"
+    ]
+  },
+  "continuous_selected_missing_values": 0,
+  "missing_policy": "drop rows with missing selected values; do not impute",
+  "full_data_pca_rows": 4137,
+  "factor_analysis_rows": 2000,
+  "clustering_rows": 1200,
+  "fa_n_factors_parallel_analysis": 3,
+  "cluster_selected_k": 2,
+  "cluster_silhouette": 0.3403006822141943,
+  "time_segments": [
+    {
+      "file": "NEW-DATA-1.T15.txt",
+      "rows": 2764,
+      "start_utc": "2012-03-13T11:45:00",
+      "end_utc": "2012-04-11T06:30:00"
+    },
+    {
+      "file": "NEW-DATA-2.T15.txt",
+      "rows": 1373,
+      "start_utc": "2012-04-18T00:00:00",
+      "end_utc": "2012-05-02T07:30:00"
+    }
+  ],
+  "temporal_gap_hours": 161.5,
+  "pca_full_explained": {
+    "climate": [
+      0.7190738332367761,
+      0.18634404664580675,
+      0.054811182688819904,
+      0.027130491949360708,
+      0.008317303448846727,
+      0.003728301100033325,
+      0.0005948409303564307
+    ],
+    "climate_plus_solar": [
+      0.49108114262015445,
+      0.2307696661265522,
+      0.13444047395088016,
+      0.05920879114430247,
+      0.037077619488925344,
+      0.02046237554673913,
+      0.015159339610229817,
+      0.006142860299187582,
+      0.003577553427028078,
+      0.0017237372126827754,
+      0.0003564405733180493
+    ],
+    "expanded_with_room_light": [
+      0.4585852038340034,
+      0.28622834070342607,
+      0.11427336909058562,
+      0.054054874523989854,
+      0.039561709905007715,
+      0.01815884693481487,
+      0.013038614755506621,
+      0.0075960205659471956,
+      0.0034712634709642156,
+      0.0020417803991055698,
+      0.0014803719964216965,
+      0.0012080408464754254,
+      0.00030156297375168216
+    ]
+  },
+  "temporal_reconstruction": [
+    {
+      "model": "climate",
+      "components": 1,
+      "train_standardized_rmse": 0.6006052599402932,
+      "later_standardized_rmse": 0.5680327547478239,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate",
+      "components": 2,
+      "train_standardized_rmse": 0.3300107039813886,
+      "later_standardized_rmse": 0.38914476243926915,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate",
+      "components": 3,
+      "train_standardized_rmse": 0.22707777554270814,
+      "later_standardized_rmse": 0.26031387223876484,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate",
+      "components": 4,
+      "train_standardized_rmse": 0.13356591265537304,
+      "later_standardized_rmse": 0.10549078483069901,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate",
+      "components": 5,
+      "train_standardized_rmse": 0.07734791783595539,
+      "later_standardized_rmse": 0.06684218149133729,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate_plus_solar",
+      "components": 1,
+      "train_standardized_rmse": 0.7404232550558624,
+      "later_standardized_rmse": 0.8098079850685249,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate_plus_solar",
+      "components": 2,
+      "train_standardized_rmse": 0.562271849990645,
+      "later_standardized_rmse": 0.5981678337690389,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate_plus_solar",
+      "components": 3,
+      "train_standardized_rmse": 0.3818047514612332,
+      "later_standardized_rmse": 0.4677146680571349,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate_plus_solar",
+      "components": 4,
+      "train_standardized_rmse": 0.2985116453563474,
+      "later_standardized_rmse": 0.357423415949644,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "climate_plus_solar",
+      "components": 5,
+      "train_standardized_rmse": 0.22699347940964942,
+      "later_standardized_rmse": 0.2948091354245879,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "expanded_with_room_light",
+      "components": 1,
+      "train_standardized_rmse": 0.7542567710272644,
+      "later_standardized_rmse": 0.9212174300233975,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "expanded_with_room_light",
+      "components": 2,
+      "train_standardized_rmse": 0.5354871635509887,
+      "later_standardized_rmse": 0.5822440970311137,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "expanded_with_room_light",
+      "components": 3,
+      "train_standardized_rmse": 0.3774566614995263,
+      "later_standardized_rmse": 0.46985558049193893,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "expanded_with_room_light",
+      "components": 4,
+      "train_standardized_rmse": 0.30182576447777887,
+      "later_standardized_rmse": 0.38162303776155265,
+      "train_rows": 2764,
+      "later_rows": 1373
+    },
+    {
+      "model": "expanded_with_room_light",
+      "components": 5,
+      "train_standardized_rmse": 0.21935373843241576,
+      "later_standardized_rmse": 0.30471252544052646,
+      "train_rows": 2764,
+      "later_rows": 1373
+    }
+  ],
+  "component_physical_profiles": [
+    {
+      "component": "PC1",
+      "explained_variance_ratio": 0.4585852038340034,
+      "indoor temperature and humidity": 0.6623588796110018,
+      "outdoor / forecast climate": 0.8320368412334238,
+      "solar irradiance and facade light": 0.52442094170622,
+      "indoor illuminance": 0.6626128440695405
+    },
+    {
+      "component": "PC2",
+      "explained_variance_ratio": 0.28622834070342607,
+      "indoor temperature and humidity": 0.5195486732680659,
+      "outdoor / forecast climate": 0.2704582844261773,
+      "solar irradiance and facade light": 0.554553142795469,
+      "indoor illuminance": 0.6870210206483518
+    },
+    {
+      "component": "PC3",
+      "explained_variance_ratio": 0.11427336909058562,
+      "indoor temperature and humidity": 0.42157610360880915,
+      "outdoor / forecast climate": 0.3231050372852118,
+      "solar irradiance and facade light": 0.22937301841440852,
+      "indoor illuminance": 0.05320217827068833
+    },
+    {
+      "component": "PC4",
+      "explained_variance_ratio": 0.054054874523989854,
+      "indoor temperature and humidity": 0.13505448682421972,
+      "outdoor / forecast climate": 0.14131483641255893,
+      "solar irradiance and facade light": 0.23189697828973396,
+      "indoor illuminance": 0.136458228939121
+    },
+    {
+      "component": "PC5",
+      "explained_variance_ratio": 0.039561709905007715,
+      "indoor temperature and humidity": 0.09537442683981373,
+      "outdoor / forecast climate": 0.04385876369289871,
+      "solar irradiance and facade light": 0.23525018725206265,
+      "indoor illuminance": 0.16420972595380767
+    },
+    {
+      "component": "PC6",
+      "explained_variance_ratio": 0.01815884693481487,
+      "indoor temperature and humidity": 0.12246708409537901,
+      "outdoor / forecast climate": 0.19312035115463552,
+      "solar irradiance and facade light": 0.03939965800046838,
+      "indoor illuminance": 0.04560783306028805
+    },
+    {
+      "component": "PC7",
+      "explained_variance_ratio": 0.013038614755506621,
+      "indoor temperature and humidity": 0.09590623878285078,
+      "outdoor / forecast climate": 0.15892194850696212,
+      "solar irradiance and facade light": 0.017517289720817487,
+      "indoor illuminance": 0.025418174714370283
+    },
+    {
+      "component": "PC8",
+      "explained_variance_ratio": 0.0075960205659471956,
+      "indoor temperature and humidity": 0.03070858133773758,
+      "outdoor / forecast climate": 0.027985338412130495,
+      "solar irradiance and facade light": 0.09596025258732911,
+      "indoor illuminance": 0.08065157772042207
+    },
+    {
+      "component": "PC9",
+      "explained_variance_ratio": 0.0034712634709642156,
+      "indoor temperature and humidity": 0.05715634848294414,
+      "outdoor / forecast climate": 0.06818453010544005,
+      "solar irradiance and facade light": 0.009326449845300573,
+      "indoor illuminance": 0.0482328467130022
+    },
+    {
+      "component": "PC10",
+      "explained_variance_ratio": 0.0020417803991055698,
+      "indoor temperature and humidity": 0.0152586250803273,
+      "outdoor / forecast climate": 0.009333371589923284,
+      "solar irradiance and facade light": 0.03045220565792834,
+      "indoor illuminance": 0.09737786866407161
+    },
+    {
+      "component": "PC11",
+      "explained_variance_ratio": 0.0014803719964216965,
+      "indoor temperature and humidity": 0.046990717435667975,
+      "outdoor / forecast climate": 0.04063537665959236,
+      "solar irradiance and facade light": 0.008307926901544657,
+      "indoor illuminance": 0.017464233163904153
+    },
+    {
+      "component": "PC12",
+      "explained_variance_ratio": 0.0012080408464754254,
+      "indoor temperature and humidity": 0.009906396921182599,
+      "outdoor / forecast climate": 0.008776616145353997,
+      "solar irradiance and facade light": 0.03456571627691983,
+      "indoor illuminance": 0.043776079209757
+    },
+    {
+      "component": "PC13",
+      "explained_variance_ratio": 0.00030156297375168216,
+      "indoor temperature and humidity": 0.023532671713034244,
+      "outdoor / forecast climate": 0.001944946136446881,
+      "solar irradiance and facade light": 0.0009335556682308313,
+      "indoor illuminance": 0.00016202420478053826
+    }
+  ],
+  "cluster_profiles": [
+    {
+      "cluster": 1,
+      "rows": 445,
+      "mean_solar_features_z": 0.7236718851049604,
+      "mean_room_light_z": 0.8316789335002209,
+      "mean_temperature_z": 0.7068782675256566,
+      "mean_humidity_z": -0.5347531977706466
+    },
+    {
+      "cluster": 2,
+      "rows": 755,
+      "mean_solar_features_z": -0.4628608337591897,
+      "mean_room_light_z": -0.5619561592649448,
+      "mean_temperature_z": -0.4483983846054018,
+      "mean_humidity_z": 0.363152573911613
+    }
+  ]
+}
